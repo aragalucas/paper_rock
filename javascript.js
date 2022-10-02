@@ -25,7 +25,7 @@ else if (playerSelection == p && computerSelection == r) {
     
 } 
 else if (computerSelection == r && playerSelection == s) {
-    return "computer" 
+    return "computer win" 
 }
 else if (computerSelection == s && playerSelection == p) {
     return "computer win" 
@@ -62,18 +62,6 @@ else if (winner == "Tie" && compscore1 == 0) {
     return compscore1
 }
 }
-let playerSelection = prompt("what is your choice").toLowerCase();
-let computerSelection = getComputerChoice();
-let winner = playRound(playerSelection, computerSelection)
-let compscore = compscoree();
-let playerscore = playerscoree();
-console.log(playerSelection, computerSelection)
-console.log(playRound(playerSelection, computerSelection))
-console.log("player score: " + playerscore)
-console.log("computer score: " + compscore)
-}
-let compscore = compscoree();
-let playerscore = playerscoree();
 function winer() {
     if (compscore > playerscore) {
         return "computer win the game"
@@ -84,5 +72,15 @@ function winer() {
     else if (compscore == playerscore) {
         return "game tied"
     }
+}
+let playerSelection = prompt("what is your choice").toLowerCase();
+let computerSelection = getComputerChoice();
+let winner = playRound(playerSelection, computerSelection)
+let compscore = compscoree();
+let playerscore = playerscoree();
+console.log(playerSelection, computerSelection)
+console.log(playRound(playerSelection, computerSelection))
+console.log("player score: " + playerscore)
+console.log("computer score: " + compscore)
 }
 console.log(winer());
