@@ -1,2 +1,5 @@
-x = "Hello, World"
-console.log(x)
+function getComputerChoice() {
+let choice = "paper"
+return choice
+}
+console.log(getComputerChoice())
