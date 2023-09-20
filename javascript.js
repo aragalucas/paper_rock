@@ -72,3 +72,14 @@ console.log(playRound(playerSelection, computerSelection))
 console.log("player score: " + playerscore)
 console.log("computer score: " + compscore)
 }
+let compscore = compscoree();
+let playerscore = playerscoree();
+function winer() {
+    if (compscore > playerscore) {
+        return "computer win the game"
+    }
+    if (compscore < playerscore) {
+        return "player win the game"
+    }
+}
+console.log(winer());
