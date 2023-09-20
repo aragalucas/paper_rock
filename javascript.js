@@ -3,6 +3,10 @@ let options = ["paper", "rock", "scissor"];
 let choice = options[Math.floor(Math.random()*options.length)];
 return choice
 }
+i = 0
+while (i < 5)
+{
+    i += 1
 function playRound(playerSelection, computerSelection) {
 let s = "scissor"; 
 let r = "rock";
@@ -37,3 +41,4 @@ let playerSelection = prompt("what is your choice").toLowerCase();
 let computerSelection = getComputerChoice();
 console.log(playerSelection, computerSelection)
 console.log(playRound(playerSelection, computerSelection))
+}
