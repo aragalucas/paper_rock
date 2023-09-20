@@ -81,5 +81,8 @@ function winer() {
     if (compscore < playerscore) {
         return "player win the game"
     }
+    if (compscore == playerscore) {
+        return "game tied"
+    }
 }
 console.log(winer());
