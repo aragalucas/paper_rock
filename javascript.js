@@ -78,10 +78,10 @@ function winer() {
     if (compscore > playerscore) {
         return "computer win the game"
     }
-    if (compscore < playerscore) {
+    else if (compscore < playerscore) {
         return "player win the game"
     }
-    if (compscore == playerscore) {
+    else if (compscore == playerscore) {
         return "game tied"
     }
 }
