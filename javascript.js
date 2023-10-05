@@ -76,9 +76,9 @@ playerSelection = randomplayerSelection
 let winner = playRound(playerSelection, computerSelection);
 let compscore = compscoree();
 let playerscore = playerscoree();
-console.log(playerSelection, computerSelection);
+console.log("player choose: " + playerSelection);
+console.log("computer choose: " + computerSelection)
 console.log(playRound(playerSelection, computerSelection));
 console.log("player score: " + playerscore);
 console.log("computer score: " + compscore);
 }
-console.log(winer());
