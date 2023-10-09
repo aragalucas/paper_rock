@@ -1,3 +1,4 @@
 # Project: Rock Paper Scissors
+once i made this project i have demonstrate javascript abilities
 
-later I will add a gui for this project
+live site: https://aragalucas.github.io/paper_rock
