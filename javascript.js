@@ -1,5 +1,6 @@
 compscore1 = 0
 playerscore1 = 0
+allscore1 = 0;
 function randomChoice() {
     function getComputerChoice() {
         let options = ["paper", "rock", "scissor"];
@@ -59,17 +60,28 @@ function randomChoice() {
             return compscore1
         }
         }
+        function allscoree() {
+            if (winner == "Tie") {
+                allscore1 += 1;
+                return allscore1
+            } else {
+                return allscore1
+            }
+            }
         let computerSelection = getComputerChoice();
         let randomplayerSelection = getComputerChoice();
         let playerSelection = randomplayerSelection
         let winner = playRound(playerSelection, computerSelection);
         let compscore = compscoree();
         let playerscore = playerscoree();
+        let allscore = allscoree();
+        let allscor = allscore + playerscore + compscore;
         document.getElementById("item0").innerHTML = playRound(playerSelection, computerSelection)
         document.getElementById("item1").innerHTML = "player choose: " + playerSelection;
         document.getElementById("item2").innerHTML = "computer choose: " + computerSelection;
         document.getElementById("item3").innerHTML = "player score: " + playerscore;
         document.getElementById("item4").innerHTML = "computer score: " + compscore;
+        document.getElementById("item5").innerHTML = "rounds " + allscor;
     }
 
     function rockChoice() {
@@ -131,16 +143,27 @@ function randomChoice() {
             return compscore1
         }
         }
+        function allscoree() {
+        if (winner == "Tie") {
+            allscore1 += 1
+            return allscore1
+        } else {
+            return allscore1
+        }
+        }
         let computerSelection = getComputerChoice();
         let playerSelection = "rock"
         let winner = playRound(playerSelection, computerSelection);
         let compscore = compscoree();
         let playerscore = playerscoree();
+        let allscore = allscoree();
+        let allscor = allscore + playerscore + compscore;
         document.getElementById("item0").innerHTML = playRound(playerSelection, computerSelection)
         document.getElementById("item1").innerHTML = "player choose: " + playerSelection;
         document.getElementById("item2").innerHTML = "computer choose: " + computerSelection;
         document.getElementById("item3").innerHTML = "player score: " + playerscore;
         document.getElementById("item4").innerHTML = "computer score: " + compscore;
+        document.getElementById("item5").innerHTML = "rounds " + allscor;
         }
         function paperChoice() {
             function getComputerChoice() {
@@ -201,16 +224,27 @@ function randomChoice() {
                     return compscore1
                 }
                 }
+                function allscoree() {
+                    if (winner == "Tie") {
+                        allscore1 += 1
+                        return allscore1
+                    } else {
+                        return allscore1
+                    }
+                    }
                 let computerSelection = getComputerChoice();
                 let playerSelection = "paper"
                 let winner = playRound(playerSelection, computerSelection);
                 let compscore = compscoree();
                 let playerscore = playerscoree();
+                let allscore = allscoree();
+                let allscor = allscore + playerscore + compscore;
                 document.getElementById("item0").innerHTML = playRound(playerSelection, computerSelection)
                 document.getElementById("item1").innerHTML = "player choose: " + playerSelection;
                 document.getElementById("item2").innerHTML = "computer choose: " + computerSelection;
                 document.getElementById("item3").innerHTML = "player score: " + playerscore;
                 document.getElementById("item4").innerHTML = "computer score: " + compscore;
+                document.getElementById("item5").innerHTML = "rounds " + allscor;
                 }
                 function scissorChoice() {
                     function getComputerChoice() {
@@ -271,27 +305,43 @@ function randomChoice() {
                             return compscore1
                         }
                         }
+                        function allscoree() {
+                            if (winner == "Tie") {
+                                allscore1 += 1
+                                return allscore1
+                            } else {
+                                return allscore1
+                            }
+                            }
                         let computerSelection = getComputerChoice();
                         let playerSelection = "scissor"
                         let winner = playRound(playerSelection, computerSelection);
                         let compscore = compscoree();
                         let playerscore = playerscoree();
+                        let allscore = allscoree();
+                        let allscor = allscore + playerscore + compscore;
                         document.getElementById("item0").innerHTML = playRound(playerSelection, computerSelection)
                         document.getElementById("item1").innerHTML = "player choose: " + playerSelection;
                         document.getElementById("item2").innerHTML = "computer choose: " + computerSelection;
                         document.getElementById("item3").innerHTML = "player score: " + playerscore;
                         document.getElementById("item4").innerHTML = "computer score: " + compscore;
+                        document.getElementById("item5").innerHTML = "rounds " + allscor;
                         }
                         function newgame() {
                         function compsco() {
-                                compscore1 = 0
-                                return compscore1
+                            compscore1 = 0
+                            return compscore1
                             }
                         function playsco() {
                             playerscore1 = 0
                             return playerscore1
                             }
+                        function allsco() {
+                            allscore1 = 0
+                            return allscore1
+                            }
                         let compscore = compsco();
                         let playerscore = playsco();
-                        document.getElementById("item0").innerHTML = "new game started"
+                        let allscore = allsco();
+                        document.getElementById("item0").innerHTML = "new game started";
                         }
