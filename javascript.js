@@ -101,8 +101,7 @@ function randomChoice() {
         document.getElementById("item3").innerHTML = "player score: " + playerscore;
         document.getElementById("item4").innerHTML = "computer score: " + compscore;
         document.getElementById("item5").innerHTML = "rounds " + allscor;
-        if (i >= u) {
-            document.getElementById("item6").innerHTML = winner;
+        if (i > u) {
             document.getElementById("item0").innerHTML = ""
             document.getElementById("item1").innerHTML = ""
             document.getElementById("item2").innerHTML = ""
@@ -110,6 +109,9 @@ function randomChoice() {
             document.getElementById("item4").innerHTML = ""
             document.getElementById("item5").innerHTML = ""
             }
+        if (i == u) {
+            document.getElementById("item6").innerHTML = winner;
+        }
             }
 }
     function rockChoice() {
@@ -209,8 +211,7 @@ function randomChoice() {
         document.getElementById("item3").innerHTML = "player score: " + playerscore;
         document.getElementById("item4").innerHTML = "computer score: " + compscore;
         document.getElementById("item5").innerHTML = "rounds " + allscor;
-        if (i >= u) {
-            document.getElementById("item6").innerHTML = winner;
+        if (i > u) {
             document.getElementById("item0").innerHTML = ""
             document.getElementById("item1").innerHTML = ""
             document.getElementById("item2").innerHTML = ""
@@ -218,6 +219,9 @@ function randomChoice() {
             document.getElementById("item4").innerHTML = ""
             document.getElementById("item5").innerHTML = ""
             }
+        if (i == u) {
+            document.getElementById("item6").innerHTML = winner;
+        }
     }
     }
         function paperChoice() {
@@ -317,8 +321,7 @@ function randomChoice() {
                 document.getElementById("item3").innerHTML = "player score: " + playerscore;
                 document.getElementById("item4").innerHTML = "computer score: " + compscore;
                 document.getElementById("item5").innerHTML = "rounds " + allscor;
-                if (i >= u) {
-                    document.getElementById("item6").innerHTML = winner;
+                if (i > u) {
                     document.getElementById("item0").innerHTML = ""
                     document.getElementById("item1").innerHTML = ""
                     document.getElementById("item2").innerHTML = ""
@@ -326,6 +329,9 @@ function randomChoice() {
                     document.getElementById("item4").innerHTML = ""
                     document.getElementById("item5").innerHTML = ""
                     }
+                if (i == u) {
+                    document.getElementById("item6").innerHTML = winner;
+                }
             }
         }
                 function scissorChoice() {
@@ -425,15 +431,17 @@ function randomChoice() {
                         document.getElementById("item3").innerHTML = "player score: " + playerscore;
                         document.getElementById("item4").innerHTML = "computer score: " + compscore;
                         document.getElementById("item5").innerHTML = "rounds " + allscor;
-                        if (i >= u) {
-                            document.getElementById("item6").innerHTML = winner;
+                        if (i > u) {
                             document.getElementById("item0").innerHTML = ""
                             document.getElementById("item1").innerHTML = ""
                             document.getElementById("item2").innerHTML = ""
                             document.getElementById("item3").innerHTML = ""
                             document.getElementById("item4").innerHTML = ""
                             document.getElementById("item5").innerHTML = ""
-                            }  
+                            }
+                        if (i == u) {
+                            document.getElementById("item6").innerHTML = winner;
+                        }
                     }
                     }
                     function newGame() {
