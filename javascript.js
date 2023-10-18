@@ -1,10 +1,11 @@
 compscore1 = 0
 playerscore1 = 0
 allscore1 = 0;
-i = 0;
+i = 0
+u = prompt("how many rounds you want :")
 function randomChoice() {
     i += 1
-    if (i < 6) {
+    if (i < u + 1) {
     function getComputerChoice() {
         let options = ["paper", "rock", "scissor"];
         let choice = options[Math.floor(Math.random()*options.length)];
@@ -100,14 +101,14 @@ function randomChoice() {
         document.getElementById("item3").innerHTML = "player score: " + playerscore;
         document.getElementById("item4").innerHTML = "computer score: " + compscore;
         document.getElementById("item5").innerHTML = "rounds " + allscor;
-        if (i == 5) {
+        if (i == u) {
             document.getElementById("item6").innerHTML = winner;
         }
     }
     }
     function rockChoice() {
         i += 1
-    if (i < 6) {
+    if (i < u + 1) {
     function getComputerChoice() {
         let options = ["paper", "rock", "scissor"];
         let choice = options[Math.floor(Math.random()*options.length)];
@@ -202,14 +203,14 @@ function randomChoice() {
         document.getElementById("item3").innerHTML = "player score: " + playerscore;
         document.getElementById("item4").innerHTML = "computer score: " + compscore;
         document.getElementById("item5").innerHTML = "rounds " + allscor;
-        if (i == 5) {
+        if (i == u) {
             document.getElementById("item6").innerHTML = winner;
         }
     }
     }
         function paperChoice() {
             i += 1
-            if (i < 6) {
+            if (i < u + 1) {
             function getComputerChoice() {
                 let options = ["paper", "rock", "scissor"];
                 let choice = options[Math.floor(Math.random()*options.length)];
@@ -304,14 +305,14 @@ function randomChoice() {
                 document.getElementById("item3").innerHTML = "player score: " + playerscore;
                 document.getElementById("item4").innerHTML = "computer score: " + compscore;
                 document.getElementById("item5").innerHTML = "rounds " + allscor;
-                if (i == 5) {
+                if (i == u) {
                     document.getElementById("item6").innerHTML = winner;
                 }
             }
         }
                 function scissorChoice() {
                     i += 1
-                    if (i < 6) {
+                    if (i < u + 1) {
                     function getComputerChoice() {
                         let options = ["paper", "rock", "scissor"];
                         let choice = options[Math.floor(Math.random()*options.length)];
@@ -406,7 +407,7 @@ function randomChoice() {
                         document.getElementById("item3").innerHTML = "player score: " + playerscore;
                         document.getElementById("item4").innerHTML = "computer score: " + compscore;
                         document.getElementById("item5").innerHTML = "rounds " + allscor;
-                        if (i == 5) {
+                        if (i == u) {
                             document.getElementById("item6").innerHTML = winner;
                         }    
                     }
