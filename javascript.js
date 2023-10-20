@@ -111,6 +111,12 @@ function randomChoice() {
             }
         if (i == u) {
             document.getElementById("item6").innerHTML = winner;
+            document.getElementById("item0").innerHTML = playRound(playerSelection, computerSelection)
+            document.getElementById("item1").innerHTML = "player choose: " + playerSelection;
+            document.getElementById("item2").innerHTML = "computer choose: " + computerSelection;
+            document.getElementById("item3").innerHTML = "player score: " + playerscore;
+            document.getElementById("item4").innerHTML = "computer score: " + compscore;
+            document.getElementById("item5").innerHTML = "rounds " + allscor;
         }
             }
 }
