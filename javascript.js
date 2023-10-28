@@ -450,5 +450,11 @@ function randomChoice() {
                         allscore1 = 0;
                         i = 0
                         u = prompt("how many rounds you want: ")
+                        document.getElementById("item0").innerHTML = "";
+                        document.getElementById("item1").innerHTML = "";
+                        document.getElementById("item2").innerHTML = "";
+                        document.getElementById("item3").innerHTML = "";
+                        document.getElementById("item4").innerHTML = "";
+                        document.getElementById("item5").innerHTML = "";
                         document.getElementById("item6").innerHTML = "";
                     }

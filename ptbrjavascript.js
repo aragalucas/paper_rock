@@ -453,5 +453,11 @@ function scissorChoice() {
                         allscore1 = 0;
                         i = 0
                         u = prompt("quantas rodadas voce quer ?: ")
+                        document.getElementById("item0").innerHTML = "";
+                        document.getElementById("item1").innerHTML = "";
+                        document.getElementById("item2").innerHTML = "";
+                        document.getElementById("item3").innerHTML = "";
+                        document.getElementById("item4").innerHTML = "";
+                        document.getElementById("item5").innerHTML = "";
                         document.getElementById("item6").innerHTML = "";
                     }
