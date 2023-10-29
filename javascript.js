@@ -2,7 +2,7 @@ compscore1 = 0
 playerscore1 = 0
 allscore1 = 0;
 i = 0
-u = prompt("how many rounds you want: ")
+u = prompt("how many rounds you want?: ")
 function randomChoice() {
     i += 1
     if (i < u + 1) {
@@ -449,7 +449,7 @@ function randomChoice() {
                         playerscore1 = 0
                         allscore1 = 0;
                         i = 0
-                        u = prompt("how many rounds you want: ")
+                        u = prompt("how many rounds you want?: ")
                         document.getElementById("item0").innerHTML = "";
                         document.getElementById("item1").innerHTML = "";
                         document.getElementById("item2").innerHTML = "";
