@@ -2,7 +2,7 @@ compscore1 = 0
 playerscore1 = 0
 allscore1 = 0;
 i = 0
-u = prompt("quantas rodadas voce quer?: ")
+u = prompt("quantas rodadas você quer?: ")
 function randomChoice() {
     i += 1
     if (i < u + 1) {
@@ -452,7 +452,7 @@ function scissorChoice() {
                         playerscore1 = 0
                         allscore1 = 0;
                         i = 0
-                        u = prompt("quantas rodadas voce quer?: ")
+                        u = prompt("quantas rodadas você quer?: ")
                         document.getElementById("item0").innerHTML = "";
                         document.getElementById("item1").innerHTML = "";
                         document.getElementById("item2").innerHTML = "";
